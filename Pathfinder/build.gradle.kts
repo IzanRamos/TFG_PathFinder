@@ -2,4 +2,15 @@
 plugins {
     alias(libs.plugins.androidApplication) apply false
     alias(libs.plugins.jetbrainsKotlinAndroid) apply false
+<<<<<<< Updated upstream
+=======
+    id("org.jetbrains.dokka") version "1.9.0"
+    // Firebase.
+    id("com.google.gms.google-services") version "4.4.2" apply false
+
+}
+
+subprojects {
+    apply(plugin = "org.jetbrains.dokka")
+>>>>>>> Stashed changes
 }

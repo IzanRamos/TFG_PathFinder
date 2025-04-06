@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    // Google services para firebase
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -37,6 +39,24 @@ android {
 
 dependencies {
 
+<<<<<<< Updated upstream
+=======
+    // Dependencia para trabajar con OpenStreetMap
+    implementation("org.osmdroid:osmdroid-android:6.1.16")
+
+    // Dependencia para compatibilidad con otras versiones android
+    implementation("androidx.appcompat:appcompat:1.6.1")
+
+    // Extensiones para código
+    implementation("androidx.core:core-ktx:1.12.0")
+
+    // Extensión para la ubicación en tiempo real
+    implementation("com.google.android.gms:play-services-location:18.0.0")
+
+    // Dependencia de firebase.
+    implementation(platform("com.google.firebase:firebase-bom:33.12.0"))
+    /*Dependencias base*/
+>>>>>>> Stashed changes
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
