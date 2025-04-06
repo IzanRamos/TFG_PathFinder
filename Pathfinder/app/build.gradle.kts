@@ -39,8 +39,6 @@ android {
 
 dependencies {
 
-<<<<<<< Updated upstream
-=======
     // Dependencia para trabajar con OpenStreetMap
     implementation("org.osmdroid:osmdroid-android:6.1.16")
 
@@ -56,7 +54,7 @@ dependencies {
     // Dependencia de firebase.
     implementation(platform("com.google.firebase:firebase-bom:33.12.0"))
     /*Dependencias base*/
->>>>>>> Stashed changes
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
