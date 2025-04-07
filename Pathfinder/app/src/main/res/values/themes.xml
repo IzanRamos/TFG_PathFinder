@@ -1,8 +1,22 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.PathFinder" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Backgrounds -->
+        <item name="android:windowBackground">@color/beige_background</item>
+        <item name="colorOnBackground">@color/beige_background</item>
+
+        <!-- Colores de marca -->
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorPrimaryVariant">@color/green_primary_variant</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secundarios -->
+        <item name="colorSecondary">@color/accent_blue</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Textos -->
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/dark_gray</item>
     </style>
 
     <style name="Theme.PathFinder" parent="Base.Theme.PathFinder" />

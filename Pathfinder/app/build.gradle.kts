@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "es.masanz.pathfinder"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "es.masanz.pathfinder"
@@ -51,8 +51,10 @@ dependencies {
     // Extensión para la ubicación en tiempo real
     implementation("com.google.android.gms:play-services-location:18.0.0")
 
-    // Dependencia de firebase.
-    implementation(platform("com.google.firebase:firebase-bom:33.12.0"))
+
+
+    implementation("com.google.firebase:firebase-auth-ktx:22.3.1")
+
     /*Dependencias base*/
 
     implementation(libs.androidx.core.ktx)
