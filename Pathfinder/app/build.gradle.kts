@@ -52,8 +52,9 @@ dependencies {
     implementation("com.google.android.gms:play-services-location:18.0.0")
 
 
-
     implementation("com.google.firebase:firebase-auth-ktx:22.3.1")
+
+    implementation("com.google.firebase:firebase-firestore-ktx:25.1.3")
 
     /*Dependencias base*/
 

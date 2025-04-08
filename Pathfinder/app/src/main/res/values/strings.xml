@@ -1,4 +1,17 @@
 <resources>
+    <!-- GENERALES -->
     <string name="app_name">PathFinder</string>
+    <string name="cancelar">Cancelar</string>
+
+    <!-- REGISTRO/LOGIN -->
+    <string name="registrarse">Registrarse</string>
+    <string name="confirmar_pass">Confirmar contraseña</string>
+    <string name="pwd">Contraseña</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="nombre_completo">Nombre completo</string>
+    <string name="crear_cuenta">Crear Cuenta</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="mantenerSesion_chkbx">Mantener sesión iniciada</string>
 
 </resources>
