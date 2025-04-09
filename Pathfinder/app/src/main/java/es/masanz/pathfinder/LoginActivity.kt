@@ -47,7 +47,6 @@ class LoginActivity : AppCompatActivity() {
                                     val prefs = getSharedPreferences("prefs", MODE_PRIVATE)
                                     prefs.edit().putString("uid", user.uid).apply()
                                 }
-
                                 showHome()
                             }
                         } else {
@@ -76,7 +75,7 @@ class LoginActivity : AppCompatActivity() {
      * Navega a la actividad principal (Home).
      */
     private fun showHome() {
-        val homeIntent = Intent(this, HomeActivity::class.java)
+        val homeIntent = Intent(this, NavigationActivity::class.java)
         startActivity(homeIntent)
         finish()
     }
