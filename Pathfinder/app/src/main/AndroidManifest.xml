@@ -20,17 +20,6 @@
         <meta-data
             android:name="org.osmdroid.config"
             android:value="@string/osmdroid_config" />
-
-        <activity
-            android:name=".MainActivity"
-            android:name=".fragments.ExplorarRutasFragment"
-            android:exported="false" />
-        <activity
-            android:name=".fragments.MapaFragment"
-            android:exported="false" />
-        <activity
-            android:name=".fragments.MisRutasFragment"
-            android:exported="false" />
         <activity
             android:name=".NavigationActivity"
             android:exported="false" />

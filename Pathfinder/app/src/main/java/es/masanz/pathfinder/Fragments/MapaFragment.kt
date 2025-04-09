@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.ActivityCompat
@@ -20,6 +19,7 @@ import com.google.android.gms.location.LocationServices
 import org.osmdroid.config.Configuration
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory
 import org.osmdroid.util.GeoPoint
+import org.osmdroid.views.CustomZoomButtonsController
 import org.osmdroid.views.MapView
 import org.osmdroid.views.overlay.Marker
 
@@ -48,12 +48,15 @@ class MapaFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         // Inicializa la configuración de OSMDroid
         Configuration.getInstance().load(requireContext(), requireContext().getSharedPreferences("osmdroid", 0))
 
         // Infla el layout y configura el mapa
         val view = inflater.inflate(R.layout.fragment_mapa, container, false)
         map = view.findViewById(R.id.map)
+
+        map.zoomController.setVisibility(CustomZoomButtonsController.Visibility.NEVER)
 
         // Configuración del mapa
         map.setTileSource(TileSourceFactory.MAPNIK)
