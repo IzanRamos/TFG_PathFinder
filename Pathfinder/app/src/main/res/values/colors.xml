@@ -10,4 +10,6 @@
     <color name="cancel">#E62D2D</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+    <color name="colorAccent">#FFC107</color>
+
 </resources>

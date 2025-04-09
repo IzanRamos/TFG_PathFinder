@@ -52,8 +52,8 @@ class SplashActivity : AppCompatActivity() {
         val userUid = sharedPrefs.getString("uid", null)
 
         if (userUid != null) {
-            // Si hay un uid guardado, redirigir a HomeActivity
-            goToHome()
+            // Si hay un uid guardado, redirigir a Navigation
+            goToNavigation()
         } else {
             // Si no hay uid guardado, redirigir a LoginActivity
             goToLogin()
@@ -65,8 +65,8 @@ class SplashActivity : AppCompatActivity() {
      *
      * @see HomeActivity
      */
-    private fun goToHome() {
-        val intent = Intent(this, HomeActivity::class.java)
+    private fun goToNavigation() {
+        val intent = Intent(this, NavigationActivity::class.java)
         startActivity(intent)
         finish()
     }

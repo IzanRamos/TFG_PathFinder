@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_mis_rutas"
+        android:icon="@drawable/ic_mis_rutas"
+        android:title="Mis Rutas" />
+    <item
+        android:id="@+id/nav_mapa"
+        android:icon="@drawable/ic_mapa"
+        android:title="Mapa" />
+    <item
+        android:id="@+id/nav_explorar"
+        android:icon="@drawable/ic_explorar_rutas"
+        android:title="Explorar" />
+</menu>
