@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Colores principales -->
+    <color name="green_primary">#119e51</color>
+    <color name="green_primary_variant">#0e8a47</color>
+    <color name="beige_background">#ECE3D1</color>
+    <color name="colorBackground">#FAEFD8</color>
+    <color name="dark_gray">#4a4a4a</color>
+    <color name="accent_blue">#8db2ef</color>
+    <color name="cancel">#E62D2D</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="colorAccent">#FFC107</color>
+
 </resources>
