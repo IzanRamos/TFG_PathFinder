@@ -38,6 +38,7 @@ android {
 }
 
 dependencies {
+    /*Dependencias nuevas*/
 
     // Dependencia para trabajar con OpenStreetMap
     implementation("org.osmdroid:osmdroid-android:6.1.16")
@@ -51,6 +52,8 @@ dependencies {
     // Extensión para la ubicación en tiempo real
     implementation("com.google.android.gms:play-services-location:18.0.0")
 
+    /*Dependencias base*/
+
     // Firebase authentication y firebase firestore database.
     implementation("com.google.firebase:firebase-auth-ktx:22.3.1")
     implementation("com.google.firebase:firebase-firestore-ktx:25.1.3")
@@ -60,7 +63,6 @@ dependencies {
 
 
     /*Dependencias base*/
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permisos -->
+    <!-- Permiso internet -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Permisos de ubicación -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +17,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PathFinder"
         tools:targetApi="31">
+        <meta-data
+            android:name="org.osmdroid.config"
+            android:value="@string/osmdroid_config" />
+
         <activity
+            android:name=".MainActivity"
             android:name=".fragments.ExplorarRutasFragment"
             android:exported="false" />
         <activity

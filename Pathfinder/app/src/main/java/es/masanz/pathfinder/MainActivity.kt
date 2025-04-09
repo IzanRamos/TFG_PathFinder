@@ -1,5 +1,7 @@
 package es.masanz.pathfinder
 
+import android.Manifest
+import android.content.pm.PackageManager
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 

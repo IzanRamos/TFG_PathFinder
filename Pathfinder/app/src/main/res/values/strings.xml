@@ -1,6 +1,7 @@
 <resources>
     <!-- GENERALES -->
     <string name="app_name">PathFinder</string>
+    <string name="osmdroid_config">osmdroid</string>
     <string name="cancelar">Cancelar</string>
 
     <!-- REGISTRO/LOGIN -->
