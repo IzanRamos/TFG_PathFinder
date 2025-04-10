@@ -1,4 +1,4 @@
-package es.masanz.pathfinder
+package es.masanz.pathfinder.Activities
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -7,6 +7,7 @@ import android.os.Handler
 import android.view.animation.AlphaAnimation
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import es.masanz.pathfinder.R
 
 /**
  * Activity que maneja la pantalla de splash, mostrando el logo de la aplicación.

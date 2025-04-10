@@ -1,4 +1,4 @@
-package es.masanz.pathfinder
+package es.masanz.pathfinder.Activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,8 +12,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.widget.addTextChangedListener
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.firestore.FirebaseFirestore
+import es.masanz.pathfinder.R
+import es.masanz.pathfinder.services.FirebaseService
 
 /**
  * Registro de usuario en la aplicación.
@@ -25,9 +25,8 @@ import com.google.firebase.firestore.FirebaseFirestore
  * @author Izan Ramos
  */
 class RegisterActivity : AppCompatActivity() {
+    private val firebaseService = FirebaseService()
 
-    private lateinit var auth: FirebaseAuth
-    private lateinit var db: FirebaseFirestore
 
     private lateinit var nameError: TextView
     private lateinit var emailError: TextView
@@ -44,9 +43,6 @@ class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
-
-        auth = FirebaseAuth.getInstance()
-        db = FirebaseFirestore.getInstance()
 
         val nameEt = findViewById<EditText>(R.id.nameEditText)
         val emailEt = findViewById<EditText>(R.id.emailEditText)
@@ -189,31 +185,21 @@ class RegisterActivity : AppCompatActivity() {
      * @param password La contraseña seleccionada por el usuario.
      */
     private fun registerUser(name: String, email: String, gender: String, password: String) {
-        auth.createUserWithEmailAndPassword(email, password)
-            .addOnCompleteListener {
-                if (it.isSuccessful) {
-                    val userId = auth.currentUser?.uid
-                    val userMap = hashMapOf(
-                        "name" to name,
-                        "email" to email,
-                        "gender" to gender
-                    )
-
-                    userId?.let { uid ->
-                        db.collection("users").document(uid).set(userMap)
-                            .addOnSuccessListener {
-                                showToast("Registro exitoso")
-                                goToLogin()
-                            }
-                            .addOnFailureListener {
-                                showToast("Error al guardar datos: ${it.message}")
-                            }
-                    }
-                } else {
-                    showToast("Error en el registro: ${it.exception?.message}")
-                }
+        firebaseService.registerUser(
+            name = name,
+            email = email,
+            gender = gender,
+            password = password,
+            onSuccess = {
+                showToast("Registro exitoso")
+                goToLogin()
+            },
+            onError = { message ->
+                showToast(message)
             }
+        )
     }
+
 
     /**
      * Muestra un mensaje en forma de toast al usuario.

@@ -1,9 +1,13 @@
-package es.masanz.pathfinder
+package es.masanz.pathfinder.Activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import es.masanz.pathfinder.ExplorarRutasFragment
+import es.masanz.pathfinder.MapaFragment
+import es.masanz.pathfinder.MisRutasFragment
+import es.masanz.pathfinder.R
 
 /**
  * Actividad principal que gestiona la navegación inferior entre los fragmentos

@@ -1,4 +1,4 @@
-package es.masanz.pathfinder
+package es.masanz.pathfinder.Activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import es.masanz.pathfinder.R
 
 /**
  * Actividad principal de la aplicación, donde el usuario es redirigido después de iniciar sesión.

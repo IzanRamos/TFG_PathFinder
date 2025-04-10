@@ -1,9 +1,8 @@
-package es.masanz.pathfinder
+package es.masanz.pathfinder.Activities
 
-import android.Manifest
-import android.content.pm.PackageManager
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import es.masanz.pathfinder.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

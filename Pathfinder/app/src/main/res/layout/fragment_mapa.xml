@@ -8,4 +8,42 @@
         android:id="@+id/map"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+    <!-- Botón para iniciar modo crear ruta -->
+    <Button
+        android:id="@+id/btnCrearRuta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear Ruta"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp" />
+
+    <!-- Botones visibles solo en modo crear ruta -->
+    <LinearLayout
+        android:id="@+id/rutaActionsLayout"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp">
+
+        <Button
+            android:id="@+id/btnFinalizarRuta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finalizar" />
+
+        <Button
+            android:id="@+id/btnCancelarRuta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar" />
+
+        <Button
+            android:id="@+id/btnLimpiarPuntos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limpiar" />
+    </LinearLayout>
 </FrameLayout>
